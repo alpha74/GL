@@ -11,7 +11,7 @@
   - [Executable packages](https://github.com/alpha74/GL/tree/main/A_Simple_Start#executable-packages)
   - [Reusable packages](https://github.com/alpha74/GL/tree/main/A_Simple_Start#reusable-packages)
   - [How to Determine Type of package](https://github.com/alpha74/GL/tree/main/A_Simple_Start#how-to-determine-the-type)
-- [import statement](https://github.com/alpha74/GL/tree/main/A_Simple_Start#import-statements)
+- [import statement](https://github.com/alpha74/GL/tree/main/A_Simple_Start#import-Statement)
 - [func](https://github.com/alpha74/GL/tree/main/A_Simple_Start#func)
 
 ----
@@ -55,7 +55,7 @@
 
 ------
 
-### import Statements
+### import Statement
 
 - `import` statements are used to give all packages, access to some code written inside another package.
 
