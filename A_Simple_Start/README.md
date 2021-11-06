@@ -1,7 +1,7 @@
 ## A Simple Start
 
 
-`CodeFile-1` : [Hello World](https://github.com/alpha74/GL/tree/main)
+`CodeFile-1` : [Hello World](https://github.com/alpha74/GL/blob/main/A_Simple_Start/hello_world.go)
 
 ### Index
 
