@@ -44,3 +44,35 @@
 -----
 
 ### Function Declaration
+
+
+`CodeFile-1` [Function Calls and Returns](https://github.com/alpha74/GL/blob/main/Deeper_Into_Go/func_calls.go)
+
+`func newCard()`
+- `Go` expects that this function will return `void`.
+- Hence, it will give error will we try to `return` or assign the returned value to some var.
+
+
+`func newCard() string`
+- This tells `Go` that func `newCard()` will return data of `string` type.
+
+
+-----
+
+### Arrays in Go
+
+`Go` has two data types for handling list of records:
+
+`CodeFile-2` [Using Arrays and Slices](https://github.com/alpha74/GL/blob/main/Deeper_Into_Go/using_arrays_slices.go)
+
+#### 1. Array
+
+- Fixed length list of strings.
+- Each array needs to declared with a data type.
+
+#### 2. Slice
+
+- An Array that can grow or shrink.
+- Each slice needs to declared with a data type.
+
+
