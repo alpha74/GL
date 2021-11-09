@@ -22,6 +22,15 @@
 <img width=40% height=40% alt="image" src="https://user-images.githubusercontent.com/31771552/140604718-a77a791b-5469-4e5a-b6b3-7139cedb3653.png">
 
 
+### [Go](https://golang.org/)
+- Go is a statically typed, compiled programming language 
+- Designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. 
+- Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency
+- Appeared: 2009
+- [Golang-Wikipedia](https://en.wikipedia.org/wiki/Go_(programming_language)
+- Go is not an Object Oriented language.
+
+
 ### What are Go Packages?
 
 - A package is a collection of common source files.
