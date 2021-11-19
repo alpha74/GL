@@ -4,8 +4,8 @@
 
 ### Project Overview
 
+- [CardsApp code repo](https://github.com/alpha74/CardsApp/tree/main)
 - Creating a program to play Cards.
-<img width=50% heigh=50% alt="image" src="https://user-images.githubusercontent.com/31771552/140613718-2fb14b43-2251-435b-849d-a8b58b8cb8dc.png">
 
 
 ### Variable Declarations
@@ -76,3 +76,62 @@
 - Each slice needs to declared with a data type.
 
 
+------
+
+### Custom Type Declarations
+
+`type Deck []string`
+
+- `Deck` now extends functionality if `[]string`
+- `type` is analogous to `typedef` in `C`.
+
+- `cards := Deck{"Ace of Diamonds"}` means same as `cards := []string{"Ace of Diamonds"}`
+
+#### Receiver on function
+
+- We can define a receiver on function to work with `Deck`
+- Defined in `deck.go`
+
+```
+// A receiver on func for printing list of cards in 'Deck'
+func (D Deck) print() {
+	for i, card := range D {
+		fmt.Println(i, card)
+	}
+}
+```
+
+- This function is analogous to member function of a class in `C++`
+- Any member of type `Deck` has access to `printDeck()`
+- Usage is done in `main.go`
+
+```
+// Using receiver func instead of directly printing
+cards.printDeck()
+```
+
+### Type Conversions
+
+- Convert a string to `byte slice`
+
+```
+msg := "Hello"
+fmt.Println([]byte(msg))
+```
+
+- `[]byte` is a representation in terms if `ASCII` numbers.
+
+
+
+### File I/O
+
+- Use `ioutil.WriteFile` for writing to a file.
+- It returns an object of `error` type
+
+```
+// Func to write Deck to file
+func (D Deck) saveToFile(filename string) error {
+	// 0666 : Anyone can read/write
+	return ioutil.WriteFile(filename, []byte(D.toString()), 0666)
+}
+```
