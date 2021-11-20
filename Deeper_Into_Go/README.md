@@ -154,3 +154,14 @@ if err != nil {
 	os.Exit(1)
 }
 ```
+
+
+### Generating Random Numbers
+
+- Generates a random number between 0 and `len-1`
+
+```
+import "math/rand"
+
+randomPos := rand.Intn(len(D) - 1)
+```
