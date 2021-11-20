@@ -125,6 +125,8 @@ fmt.Println([]byte(msg))
 
 ### File I/O
 
+#### Writing to File
+
 - Use `ioutil.WriteFile` for writing to a file.
 - It returns an object of `error` type
 
@@ -133,5 +135,22 @@ fmt.Println([]byte(msg))
 func (D Deck) saveToFile(filename string) error {
 	// 0666 : Anyone can read/write
 	return ioutil.WriteFile(filename, []byte(D.toString()), 0666)
+}
+```
+
+#### Reading a File
+
+- Use `ioutil.ReadFile` to read from a file
+- It returns two objects: `byteSlice` and `error`
+
+```
+// Takes file in which Deck is saved
+// Here, err is value of type error.
+// If nothing went wrongL it will be nil
+byteSlice, err := ioutil.ReadFile(filename)
+
+if err != nil {
+	fmt.Println("Error in file reading: ", err)
+	os.Exit(1)
 }
 ```
