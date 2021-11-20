@@ -3,7 +3,7 @@
 
 ### Contents
 
-- [A Simple Start](https://github.com/alpha74/GL/blob/main/A_Simple_Start/README.md)
+- [A Simple Start](https://github.com/alpha74/GL/blob/main/A_Simple_Start/)
 - [Deeper Into Go](https://github.com/alpha74/GL/blob/main/Deeper_Into_Go/)
 - [Organizing Data with Structs]()
 - [Maps]()
